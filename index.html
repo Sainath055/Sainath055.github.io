@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://kit.fontawesome.com/d2d59b8588.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+</head>
+
+<body class="bg-[#202020] text-[#f6f3f3]">
+    <header class="w-full h-[70px] sticky top-0 backdrop-blur-[3px] shadow-none z-10
+    flex items-center justify-between px-4 duration-150 ease-linear bg-[#202020e4] ">
+        <div class="">
+            Portfolio
+        </div>
+        <div class="w-max h-max flex items-center justify-center duration-150 ease-linear 
+        lg:gap-x-10 md:gap-x-7 gap-x-5">
+            <div class="w-max h-max sm:flex hidden items-center justify-center duration-150 ease-linear
+            lg:gap-x-5 gap-x-4 text-[16px] text-[#d8d6d6]">
+                <button onclick="scrollToAbout()" class="hover:text-[#dd98ff]">
+                    About
+                </button>
+                <button onclick="scrollToProjects()" class="hover:text-[#dd98ff]">
+                    Projects
+                </button>
+                <button onclick="scrollToContact()" class="hover:text-[#dd98ff]">
+                    Contact
+                </button>
+            </div>
+            <a href="./resume/Resume.pdf" target="blank" 
+                class="w-max h-max flex items-center gap-x-1
+                px-4 py-1.5 text-[16px] border border-[#954fb9] bg-[#964fb939]  contact_btn rounded ">
+                Resume
+            </a> 
+        </div>
+    </header>
+
+    <div class="fixed w-max h-screen top-0 xl:left-[50px] lg:left-[35px] left-[25px]
+    md:flex hidden flex-col items-center justify-end gap-y-5 duration-500 ease-in-out" style="animation-delay: 150ms;">
+        <div id="social_links_div" class="w-max h-max flex flex-col gap-y-5 text-[22px] duration-500 ease-in-out" 
+        style="animation-delay: 150ms;">
+            <a href="https://www.linkedin.com/in/sainath-reddy-0871b724b" target="_blank" 
+            class="hover:-translate-y-1 duration-100 ease-in hover:text-[#b572d7]">
+                <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Sainath055" target="_blank" 
+            class="hover:-translate-y-1 duration-100 ease-in hover:text-[#a75ecc]">
+                <i class="fa-brands fa-github"></i></a>
+            <a href="https://dribbble.com/Sainath_Reddy055" target="_blank" 
+            class="hover:-translate-y-1 duration-100 ease-in hover:text-[#a75ecc]">
+                <i class="fa-brands fa-dribbble"></i></a>
+            <a href="https://www.instagram.com/sainathreddy055/" target="_blank" 
+            class="hover:-translate-y-1 duration-100 ease-in hover:text-[#a75ecc]">
+                <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/SainathReddy055" target="_blank" 
+            class="hover:-translate-y-1 duration-100 ease-in hover:text-[#a75ecc]">
+                <i class="fa-brands fa-twitter"></i></a>
+            <a href="https://codepen.io/sainath055" target="_blank" 
+            class="hover:-translate-y-1 duration-100 ease-in hover:text-[#a75ecc]">
+                <i class="fa-brands fa-codepen"></i></i></a>
+        </div>
+        <div id="social_links_Line" class="w-[2.5px] h-[25%] bg-gray-500 rounded-full duration-500 ease-in-out"></div>
+    </div>
+
+<!-- Main -->   
+    <section class="w-full h-[calc(100vh_-_70px)] flex items-center justify-center
+        xl:px-[120px] lg:px-[90px] md:px-[70px] sm:px-[50px] px-[20px]">
+        <div class="w-full max-w-[1536px] h-full flex flex-col justify-center gap-y-10
+            xl:pl-[80px] lg:pl-[50px] md:pl-[20px] pl-[10px] "> 
+            <div class="flex flex-col gap-y-5">
+                <p class="noReveal medium-heading text-[#cd69c9]">Hi, my name is</p>
+                <div>
+                <p class="noReveal big-heading text-[#d1ccd2]">Sainath Reddy.</p>
+                <p class="noReveal big-heading text-[#b3afb4]">I’m a 
+                    <span class="magic-text">
+                        web developer.
+                    </span>
+                </p>
+                </div>
+                <p class="noReveal small-heading ">
+                    I build user-centric and accessible full stack web applications. 
+                    I have a strong knowledge in frontend development, backend programming, 
+                    and a touch of web design. I'm passionate about crafting seamless digital experiences
+                </p>
+            </div>
+            <div class="w-0 h-0 px-4 py-1.5 mt-2 cursor-default
+            rounded-md flex opacity-0 items-center gap-x-1">
+            </div>
+        </div>
+    </section>
+
+<!-- About -->
+    <section id="About" class="w-full h-max pt-[40px] flex justify-center
+    xl:px-[120px] lg:px-[90px] md:px-[70px] sm:px-[50px] px-[20px]">
+        <div class="w-full max-w-[1536px] h-full flex justify-center items-center rounded-lg
+        xl:px-[80px] lg:px-[50px] md:px-[20px] px-[10px] py-10 ">
+            <div class="flex flex-col gap-y-7 w-full h-max">
+                <div class="w-full flex items-center justify-start gap-x-5">
+                    <p class="text-[#e4e1e4] lg:text-[32px] text-[28px]
+                    font-medium min-w-max">About Me</p>
+                    <p class="w-[95%] h-[0.8px] bg-gray-400"></p>
+                </div>
+                <div class="w-full flex md:flex-row flex-col md:items-start items-center 
+                md:justify-between md:gap-x-3 gap-y-4">
+                    <div class="md:max-w-[68%] flex flex-col gap-y-3 w-full h-max">
+                        <p class="noReveal max-w-full md:text-[18px] text-[16px] text-[#c4c3c8]">
+                            I have just completed my bachelor's degree in Computer Science. I'm very 
+                            passionate about web design and development, I also indulge myself in learning 
+                            new technologies to enhance my skills.
+                        </p>
+                        <p class="noReveal max-w-full md:text-[18px] text-[16px] text-[#c4c3c8]">
+                            It's been almost 3yrs since I started diving into web development. I have come across various
+                            problems, and use cases while building projects and learning stuff, and I have become better at 
+                            solving them. After going through this entire process I can see my technical 
+                            problem-solving skills have improved a lot.
+                        </p>
+                        <p class="noReveal max-w-full md:text-[18px] text-[16px] text-[#c4c3c8]">
+                            Now I'm currently seeking new opportunities, and job prospects. 
+                        </p>
+                        <p class="noReveal max-w-full font-medium 
+                        text-[18px] text-[#e4e1e4]">
+                            Technologies & tools I’m good at :
+                        </p>
+                        <p class="noReveal max-w-full md:text-[18px] text-[16px] text-[#c4c3c8]">
+                            Html, CSS , JavaScript, React js , next js, 
+                            Material UI, Antd,
+                            SASS, Tailwind CSS, PHP, Bootstrap,
+                            MySQL, MongoDB, Node.js, Express.js,
+                            Figma, Canva, Photoshop, Illustrator.
+                        </p>
+                    </div>
+                    <div class="noReveal flex flex-col gap-y-2 md:max-w-[24%] md:w-full md:mt-2 mt-5
+                    sm:w-[50%] w-[70%] h-max shadow-md duration-150 ease-linear p-0 hover:p-2
+                    bg-[#303030d3] rounded-md img_div">
+                        <img src="./assets/portfolio_pic.jpg" 
+                        class="aspect-square rounded shadow-md duration-150 ease-in 
+                        -translate-x-3 -translate-y-3 opacity-[85%] hover:opacity-100
+                        hover:translate-x-0 hover:translate-y-0 " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects -->
+    <section id="Projects" class="w-full h-max pt-[40px] flex justify-center projects_div// 
+    xl:px-[120px] lg:px-[90px] md:px-[70px] sm:px-[50px] px-[20px]">
+        <div class="w-full max-w-[1536px] h-full flex 
+        xl:px-[80px] lg:px-[50px] md:px-[20px] px-[10px] py-10 ">
+        <div class="flex flex-col gap-y-7 w-full h-max">
+            <div class="w-full flex items-center justify-start gap-x-5">
+                <p class="text-[#e4e1e4] text-[32px] font-medium min-w-max">My Projects</p>
+                <p class="w-[95%] h-[0.8px] bg-gray-400"></p>
+            </div>
+            <div class="w-full h-max grid grid-cols-1 gap-4 px-1">
+<!-- GameStore -->
+                <div class="noReveal w-full min-h-[200px] h-max bg-[#2f2e2e]/ items-center justify-start relative
+                rounded-md p-4 flex lg:flex-row lg:gap-x-2 flex-col gap-y-3 text-[#eae7ea]">
+                    <div class="lg:w-[65%] w-full h-max p-3 rounded-md duration-100 ease-linear
+                    flex items-center justify-center bg-[#2f2e2e]">
+                        <a href="https://game-store-l76cw7cu2-sainath055.vercel.app/" target="_blank">
+                            <img src="./assets/final.png"
+                            class="w-full rounded-md opacity-90 hover:opacity-100 duration-100 ease-in" />
+                        </a>
+                    </div>
+                    <div class="xl:w-[600px] lg:w-[500px] w-full h-max text-[16px] p-4 lg:absolute right-0 rounded-md 
+                    flex flex-col gap-y-2 bg-[#484747] lg:shadow-md">
+                        <div class="w-full h-max flex items-center justify-between">
+                            <p class="font-medium text-[18px] leading-normal">GameStore</p>
+                            <div class="flex items-center gap-x-3">
+                                <a href="https://github.com/Sainath055/Game-Store" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                    width="22px" height="22px" 
+                                    viewBox="0 0 256 256"><path fill="currentColor" 
+                                    d="M208.31 75.68A59.78 59.78 0 0 0 202.93 28a8 8 0 0 0-6.93-4a59.75 59.75 0 0 0-48 24h-24a59.75 59.75 0 0 0-48-24a8 8 0 0 0-6.93 4a59.78 59.78 0 0 0-5.38 47.68A58.14 58.14 0 0 0 56 104v8a56.06 56.06 0 0 0 48.44 55.47A39.8 39.8 0 0 0 96 192v8H72a24 24 0 0 1-24-24a40 40 0 0 0-40-40a8 8 0 0 0 0 16a24 24 0 0 1 24 24a40 40 0 0 0 40 40h24v16a8 8 0 0 0 16 0v-40a24 24 0 0 1 48 0v40a8 8 0 0 0 16 0v-40a39.8 39.8 0 0 0-8.44-24.53A56.06 56.06 0 0 0 216 112v-8a58.14 58.14 0 0 0-7.69-28.32ZM200 112a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40v-8a41.74 41.74 0 0 1 6.9-22.48a8 8 0 0 0 1.1-7.69a43.81 43.81 0 0 1 .79-33.58a43.88 43.88 0 0 1 32.32 20.06a8 8 0 0 0 6.71 3.69h32.35a8 8 0 0 0 6.74-3.69a43.87 43.87 0 0 1 32.32-20.06a43.81 43.81 0 0 1 .77 33.58a8.09 8.09 0 0 0 1 7.65a41.72 41.72 0 0 1 7 22.52Z">
+                                    </path></svg>
+                                </a>
+                                <a href="https://game-store-l76cw7cu2-sainath055.vercel.app/" target="_blank">
+                                    <i class="fa fa-up-right-from-square 
+                                        lg:text-[16px] text-[16px]"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            A full stack application, with attractive UI. 
+                            Its has all the functionalities as of a real world E-commerce application and
+                            search functionalities and payment through stripe.
+                        </p> 
+                        <div class="w-full h-max flex flex-wrap items-center 
+                        gap-2 text-[14px] text-[#c3c3c3]">
+                            <p>Next js</p>
+                            <p>React js</p>
+                            <p>Ant Design</p>
+                            <p>MongoDB</p>
+                            <p>Next-Auth</p>
+                            <p>Stripe</p>
+                            <p>Tailwindcss</p>
+                        </div>
+                    </div>
+                </div>
+<!-- Blogs -->
+                <div class="noReveal w-full min-h-[200px] h-max bg-[#2f2e2e]/ items-center justify-end relative
+                rounded-md p-4 flex lg:flex-row lg:gap-x-2 flex-col gap-y-3 text-[#eae7ea]">
+                    <div class="lg:w-[65%] w-full h-max p-3 rounded-md duration-100 ease-linear
+                    flex items-center justify-center bg-[#2f2e2e]">
+                        <a href="https://blogs-055.netlify.app/" target="_blank">
+                            <img src="./assets/blogs-final1.png"
+                            class="w-full rounded-md opacity-90 hover:opacity-100 duration-100 ease-in" />
+                        </a>
+                    </div>
+                    <div class="xl:w-[600px] lg:w-[500px] w-full h-max text-[16px] p-3 lg:absolute left-0 rounded-md 
+                    flex flex-col gap-y-2 bg-[#484747] lg:shadow-md">
+                        <div class="w-full h-max flex items-center justify-between">
+                            <p class="font-medium text-[18px] leading-normal">Blogs</p>
+                            <div class="flex items-center gap-x-3">
+                                <a href="https://github.com/Sainath055/blogs_app" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                    width="22px" height="22px" 
+                                    viewBox="0 0 256 256"><path fill="currentColor" 
+                                    d="M208.31 75.68A59.78 59.78 0 0 0 202.93 28a8 8 0 0 0-6.93-4a59.75 59.75 0 0 0-48 24h-24a59.75 59.75 0 0 0-48-24a8 8 0 0 0-6.93 4a59.78 59.78 0 0 0-5.38 47.68A58.14 58.14 0 0 0 56 104v8a56.06 56.06 0 0 0 48.44 55.47A39.8 39.8 0 0 0 96 192v8H72a24 24 0 0 1-24-24a40 40 0 0 0-40-40a8 8 0 0 0 0 16a24 24 0 0 1 24 24a40 40 0 0 0 40 40h24v16a8 8 0 0 0 16 0v-40a24 24 0 0 1 48 0v40a8 8 0 0 0 16 0v-40a39.8 39.8 0 0 0-8.44-24.53A56.06 56.06 0 0 0 216 112v-8a58.14 58.14 0 0 0-7.69-28.32ZM200 112a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40v-8a41.74 41.74 0 0 1 6.9-22.48a8 8 0 0 0 1.1-7.69a43.81 43.81 0 0 1 .79-33.58a43.88 43.88 0 0 1 32.32 20.06a8 8 0 0 0 6.71 3.69h32.35a8 8 0 0 0 6.74-3.69a43.87 43.87 0 0 1 32.32-20.06a43.81 43.81 0 0 1 .77 33.58a8.09 8.09 0 0 0 1 7.65a41.72 41.72 0 0 1 7 22.52Z">
+                                    </path></svg>
+                                </a>
+                                <a href="https://blogs-055.netlify.app/" target="_blank">
+                                    <i class="fa fa-up-right-from-square 
+                                        lg:text-[16px] text-[16px]"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            A full stack MERN application resembles a real time blog post application, 
+                            with seamless mobile responsiveness 
+                            and performs all CURD operations. It has search functionality and google authentication. 
+                        </p> 
+                        <div class="w-full h-max flex flex-wrap items-center 
+                        gap-2 text-[14px] text-[#c3c3c3]">
+                            <p>React js</p>
+                            <p>Node js</p>
+                            <p>MongoDB</p>
+                            <p>Express js</p>
+                            <p>Redux</p>
+                            <p>Tailwindcss</p>
+                        </div>
+                    </div>
+                </div>
+<!-- Recipe -->
+                <div class="noReveal w-full min-h-[200px] h-max bg-[#2f2e2e]/ items-center justify-start relative
+                rounded-md p-4 flex lg:flex-row lg:gap-x-2 flex-col gap-y-3 text-[#eae7ea]">
+                    <div class="lg:w-[65%] w-full h-max p-3 rounded-md duration-100 ease-linear
+                    flex items-center justify-center bg-[#2f2e2e]">
+                        <a href="https://recipe-finder-055.netlify.app/" 
+                        target="_blank">
+                            <img src="./assets/final-recipe.png"
+                            class="w-full rounded-md opacity-90 hover:opacity-100 duration-100 ease-in" />
+                        </a>
+                    </div>
+                    <div class="xl:w-[600px] lg:w-[500px] w-full h-max text-[16px] p-3 lg:absolute right-0 rounded-md 
+                    flex flex-col gap-y-2 bg-[#484747] lg:shadow-md">
+                        <div class="w-full h-max flex items-center justify-between">
+                            <p class="font-medium text-[18px] leading-normal">Recipe Finder</p>
+                            <div class="flex items-center gap-x-3">
+                                <a href="https://github.com/Sainath055/Recipe-Finder" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                    width="22px" height="22px" 
+                                    viewBox="0 0 256 256"><path fill="currentColor" 
+                                    d="M208.31 75.68A59.78 59.78 0 0 0 202.93 28a8 8 0 0 0-6.93-4a59.75 59.75 0 0 0-48 24h-24a59.75 59.75 0 0 0-48-24a8 8 0 0 0-6.93 4a59.78 59.78 0 0 0-5.38 47.68A58.14 58.14 0 0 0 56 104v8a56.06 56.06 0 0 0 48.44 55.47A39.8 39.8 0 0 0 96 192v8H72a24 24 0 0 1-24-24a40 40 0 0 0-40-40a8 8 0 0 0 0 16a24 24 0 0 1 24 24a40 40 0 0 0 40 40h24v16a8 8 0 0 0 16 0v-40a24 24 0 0 1 48 0v40a8 8 0 0 0 16 0v-40a39.8 39.8 0 0 0-8.44-24.53A56.06 56.06 0 0 0 216 112v-8a58.14 58.14 0 0 0-7.69-28.32ZM200 112a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40v-8a41.74 41.74 0 0 1 6.9-22.48a8 8 0 0 0 1.1-7.69a43.81 43.81 0 0 1 .79-33.58a43.88 43.88 0 0 1 32.32 20.06a8 8 0 0 0 6.71 3.69h32.35a8 8 0 0 0 6.74-3.69a43.87 43.87 0 0 1 32.32-20.06a43.81 43.81 0 0 1 .77 33.58a8.09 8.09 0 0 0 1 7.65a41.72 41.72 0 0 1 7 22.52Z">
+                                    </path></svg>
+                                </a>
+                                <a href="https://recipe-finder-055.netlify.app/" 
+                                target="_blank">
+                                    <i class="fa fa-up-right-from-square 
+                                        lg:text-[16px] text-[16px]"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            A simple react application which fetches recipes and data related to food. 
+                            Its also displays details like Calories, Cuisine 
+                            Type, Diet Labels, Dish Type, Ingredients etc.
+                        </p> 
+                        <div class="w-full h-max flex flex-wrap items-center 
+                        gap-2 text-[14px] text-[#c3c3c3]">
+                            <p>React js</p>
+                            <p>Axios</p>
+                            <p>Edamam Api</p>
+                            <p>Tailwindcss</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="noReveal w-full h-max flex items-center justify-center mb-6 mt-2">
+                    <a href="./allProjects.html" target="_blank"
+                    class="w-max h-max px-4 py-2 border border-[#954fb9] bg-[#964fb939]  contact_btn
+                    rounded-md font-medium text-[16px] cursor-pointer">
+                        View all
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        </div>
+    </section>
+
+ <!-- Contact -->   
+    <section id="Contact" class="w-full h-[calc(100vh_-_70px)] flex justify-center 
+    xl:px-[120px] lg:px-[90px] md:px-[70px] sm:px-[50px] px-[20px]">
+        <div class="w-full max-w-[1536px] h-full flex flex-col items-center gap-y-4 
+        xl:px-[80px] lg:px-[50px] md:px-[20px] px-[10px] py-10 relative">
+            <p class="contact-title text-[#e4e1e4]">Get In Touch</p>
+            <p class="noReveal sm:text-[18px] text-[15px] max-w-xl text-center text-[#b3afb4]">
+                I am currently seeking new opportunities, 
+                whether it be full-time employment or individual projects. 
+                I am open to exploring job prospects and collaborating on exciting projects. 
+                Please don't hesitate to reach out to me as my inbox is always open. 
+                I strive to respond promptly and provide the best possible assistance. 
+            </p>
+            <a href='mailto:nathsai055@gmail.com'
+            class="noReveal w-max h-max px-6 py-2.5 border border-[#954fb9] bg-[#964fb939]  contact_btn
+            rounded-md font-medium 
+            md:text-[20px] text-[18px] mt-8 cursor-pointer">
+                Say Hi!
+            </a>
+            <div class="absolute w-max h-max bottom-5 text-[14px]">
+                Designed & developed by Sainath Reddy
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="./logic.js"></script>
+</html>

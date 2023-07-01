@@ -1,0 +1,211 @@
+:root {  
+    --purple: #7b1fa2;
+    --violet: #3aa4b7;
+    --pink: #d89b62;
+  }
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    /* background-image: radial-gradient(
+        rgba(255, 255, 255, 0.2) 8%, 
+        transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 5vmin 5vmin; */
+    /* height: calc(100% - 10vmin); */
+    /* padding: 5vmin; */
+    /* position: relative;
+    transition: background-position 350ms ease; */
+    /* width: calc(100% - 10vmin); */
+    /* z-index: 2; */
+    scrollbar-width: thin;
+    scrollbar-color: #888888 #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #444444;
+    border-radius: 25px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #2a2a2ae4;
+}
+body::-webkit-scrollbar-track:hover {
+    background-color: #2a2a2ae4;
+}
+
+.medium-heading {
+    font-size: clamp(22px, 5vw, 30px);
+    font-weight: 400;
+    line-height: normal;
+}
+.small-heading {
+    margin: 0;
+    font-size: clamp(14px, 5vw, 20px);
+    color: #c4c3c8;
+    max-width: 660px;
+    line-height: normal;
+}
+.big-heading {
+    font-weight: 600;
+    margin: 0;
+    line-height: normal;
+    font-size: clamp(40px, 8vw, 80px);
+    font-family: sans-serif;
+}
+
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+
+.magic-text{
+    animation: background-pan 2.5s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.project_links_div1:hover .project_links1 {
+    opacity: 1;
+}
+
+.tech-tag {
+    width: max-content;
+    height: max-content;
+    padding: 4px 12px 4px 12px;
+    background-color: #5e5c5ce0;
+    border-radius: 25px;
+    
+}
+
+.contact-title {
+    font-size: clamp(40px, 5vw, 60px);
+    font-weight: 600;
+}
+
+
+#hi_Btn:hover {
+    animation: background-pan 0.6s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 200%;
+    box-shadow: 0 0 5px #954fb9,
+                0 0 5px #954fb9,
+                0 0 10px #d89b62,
+                0 0 40px #954fb9;
+}
+
+.contact_btn {
+    border: 1.5px solid #954fb9;
+    background-color: #964fb939;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+   
+.contact_btn:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.contact_btn:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #954fb9;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.contact_btn:hover {
+    color: #ffffff;
+    border: 1.5px solid #954fb9;
+}
+
+.contact_btn:hover:before {
+    top: -35%;
+    background-color: #954fb9;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.contact_btn:hover:after {
+    top: -45%;
+    background-color: #954fb9;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.img_div{
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.2) 8%, 
+        transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 5vmin 5vmin; 
+}
+
+.projects_div {
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.2) 8%, 
+        transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 3vmin 3vmin; 
+}
+
+.noReveal {
+    opacity: 0.6;
+    transition: all 0.8s ease;
+    transform: translateX(-8px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
