@@ -21,6 +21,10 @@ window.addEventListener('scroll', () => {
     }
 });
 
+function scrollToTop() {
+    const div = document.getElementById('topDiv');
+    div.scrollIntoView({ behavior: 'smooth' });
+}
 
 function scrollToAbout() {
     const div = document.getElementById('About');
